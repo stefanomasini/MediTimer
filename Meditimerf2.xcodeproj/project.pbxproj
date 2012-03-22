@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B5F2CE3151BBF4D00CD8C0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE2151BBF4C00CD8C0B /* UIKit.framework */; };
+		7B5F2CE5151BBF4D00CD8C0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */; };
+		7B5F2CE7151BBF4D00CD8C0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE6151BBF4D00CD8C0B /* CoreGraphics.framework */; };
+		7B5F2CED151BBF4D00CD8C0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F2CEB151BBF4D00CD8C0B /* InfoPlist.strings */; };
+		7B5F2CEF151BBF4D00CD8C0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F2CEE151BBF4D00CD8C0B /* main.m */; };
+		7B5F2CF3151BBF4D00CD8C0B /* MediAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F2CF2151BBF4D00CD8C0B /* MediAppDelegate.m */; };
+		7B5F2CF6151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F2CF4151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard */; };
+		7B5F2CF9151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F2CF7151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard */; };
+		7B5F2CFC151BBF4D00CD8C0B /* MediViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F2CFB151BBF4D00CD8C0B /* MediViewController.m */; };
+		7B5F2D04151BBF4D00CD8C0B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2D03151BBF4D00CD8C0B /* SenTestingKit.framework */; };
+		7B5F2D05151BBF4D00CD8C0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE2151BBF4C00CD8C0B /* UIKit.framework */; };
+		7B5F2D06151BBF4D00CD8C0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */; };
+		7B5F2D0E151BBF4D00CD8C0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F2D0C151BBF4D00CD8C0B /* InfoPlist.strings */; };
+		7B5F2D11151BBF4D00CD8C0B /* Meditimerf2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F2D10151BBF4D00CD8C0B /* Meditimerf2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B5F2D07151BBF4D00CD8C0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5F2CD5151BBF4C00CD8C0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B5F2CDD151BBF4C00CD8C0B;
+			remoteInfo = Meditimerf2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B5F2CDE151BBF4C00CD8C0B /* Meditimerf2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditimerf2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5F2CE2151BBF4C00CD8C0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B5F2CE6151BBF4D00CD8C0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7B5F2CEA151BBF4D00CD8C0B /* Meditimerf2-Info.plist */ = {isa = PBXFileReference; path = "Meditimerf2-Info.plist"; sourceTree = "<group>"; };
+		7B5F2CEC151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B5F2CEE151BBF4D00CD8C0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B5F2CF0151BBF4D00CD8C0B /* Meditimerf2-Prefix.pch */ = {isa = PBXFileReference; path = "Meditimerf2-Prefix.pch"; sourceTree = "<group>"; };
+		7B5F2CF1151BBF4D00CD8C0B /* MediAppDelegate.h */ = {isa = PBXFileReference; path = MediAppDelegate.h; sourceTree = "<group>"; };
+		7B5F2CF2151BBF4D00CD8C0B /* MediAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediAppDelegate.m; sourceTree = "<group>"; };
+		7B5F2CF5151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		7B5F2CF8151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		7B5F2CFA151BBF4D00CD8C0B /* MediViewController.h */ = {isa = PBXFileReference; path = MediViewController.h; sourceTree = "<group>"; };
+		7B5F2CFB151BBF4D00CD8C0B /* MediViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediViewController.m; sourceTree = "<group>"; };
+		7B5F2D02151BBF4D00CD8C0B /* Meditimerf2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Meditimerf2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5F2D03151BBF4D00CD8C0B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7B5F2D0B151BBF4D00CD8C0B /* Meditimerf2Tests-Info.plist */ = {isa = PBXFileReference; path = "Meditimerf2Tests-Info.plist"; sourceTree = "<group>"; };
+		7B5F2D0D151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B5F2D0F151BBF4D00CD8C0B /* Meditimerf2Tests.h */ = {isa = PBXFileReference; path = Meditimerf2Tests.h; sourceTree = "<group>"; };
+		7B5F2D10151BBF4D00CD8C0B /* Meditimerf2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meditimerf2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B5F2CDB151BBF4C00CD8C0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5F2CE3151BBF4D00CD8C0B /* UIKit.framework in Frameworks */,
+				7B5F2CE5151BBF4D00CD8C0B /* Foundation.framework in Frameworks */,
+				7B5F2CE7151BBF4D00CD8C0B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5F2CFE151BBF4D00CD8C0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5F2D04151BBF4D00CD8C0B /* SenTestingKit.framework in Frameworks */,
+				7B5F2D05151BBF4D00CD8C0B /* UIKit.framework in Frameworks */,
+				7B5F2D06151BBF4D00CD8C0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B5F2CD3151BBF4C00CD8C0B = {
+			isa = PBXGroup;
+			children = (
+				7B5F2CE8151BBF4D00CD8C0B /* Meditimerf2 */,
+				7B5F2D09151BBF4D00CD8C0B /* Meditimerf2Tests */,
+				7B5F2CE1151BBF4C00CD8C0B /* Frameworks */,
+				7B5F2CDF151BBF4C00CD8C0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B5F2CDF151BBF4C00CD8C0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B5F2CDE151BBF4C00CD8C0B /* Meditimerf2.app */,
+				7B5F2D02151BBF4D00CD8C0B /* Meditimerf2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B5F2CE1151BBF4C00CD8C0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B5F2CE2151BBF4C00CD8C0B /* UIKit.framework */,
+				7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */,
+				7B5F2CE6151BBF4D00CD8C0B /* CoreGraphics.framework */,
+				7B5F2D03151BBF4D00CD8C0B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B5F2CE8151BBF4D00CD8C0B /* Meditimerf2 */ = {
+			isa = PBXGroup;
+			children = (
+				7B5F2CF1151BBF4D00CD8C0B /* MediAppDelegate.h */,
+				7B5F2CF2151BBF4D00CD8C0B /* MediAppDelegate.m */,
+				7B5F2CF4151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard */,
+				7B5F2CF7151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard */,
+				7B5F2CFA151BBF4D00CD8C0B /* MediViewController.h */,
+				7B5F2CFB151BBF4D00CD8C0B /* MediViewController.m */,
+				7B5F2CE9151BBF4D00CD8C0B /* Supporting Files */,
+			);
+			path = Meditimerf2;
+			sourceTree = "<group>";
+		};
+		7B5F2CE9151BBF4D00CD8C0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B5F2CEA151BBF4D00CD8C0B /* Meditimerf2-Info.plist */,
+				7B5F2CEB151BBF4D00CD8C0B /* InfoPlist.strings */,
+				7B5F2CEE151BBF4D00CD8C0B /* main.m */,
+				7B5F2CF0151BBF4D00CD8C0B /* Meditimerf2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B5F2D09151BBF4D00CD8C0B /* Meditimerf2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7B5F2D0F151BBF4D00CD8C0B /* Meditimerf2Tests.h */,
+				7B5F2D10151BBF4D00CD8C0B /* Meditimerf2Tests.m */,
+				7B5F2D0A151BBF4D00CD8C0B /* Supporting Files */,
+			);
+			path = Meditimerf2Tests;
+			sourceTree = "<group>";
+		};
+		7B5F2D0A151BBF4D00CD8C0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B5F2D0B151BBF4D00CD8C0B /* Meditimerf2Tests-Info.plist */,
+				7B5F2D0C151BBF4D00CD8C0B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B5F2CDD151BBF4C00CD8C0B /* Meditimerf2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5F2D14151BBF4D00CD8C0B /* Build configuration list for PBXNativeTarget "Meditimerf2" */;
+			buildPhases = (
+				7B5F2CDA151BBF4C00CD8C0B /* Sources */,
+				7B5F2CDB151BBF4C00CD8C0B /* Frameworks */,
+				7B5F2CDC151BBF4C00CD8C0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meditimerf2;
+			productName = Meditimerf2;
+			productReference = 7B5F2CDE151BBF4C00CD8C0B /* Meditimerf2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B5F2D01151BBF4D00CD8C0B /* Meditimerf2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5F2D17151BBF4D00CD8C0B /* Build configuration list for PBXNativeTarget "Meditimerf2Tests" */;
+			buildPhases = (
+				7B5F2CFD151BBF4D00CD8C0B /* Sources */,
+				7B5F2CFE151BBF4D00CD8C0B /* Frameworks */,
+				7B5F2CFF151BBF4D00CD8C0B /* Resources */,
+				7B5F2D00151BBF4D00CD8C0B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B5F2D08151BBF4D00CD8C0B /* PBXTargetDependency */,
+			);
+			name = Meditimerf2Tests;
+			productName = Meditimerf2Tests;
+			productReference = 7B5F2D02151BBF4D00CD8C0B /* Meditimerf2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B5F2CD5151BBF4C00CD8C0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 7B5F2CD8151BBF4C00CD8C0B /* Build configuration list for PBXProject "Meditimerf2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B5F2CD3151BBF4C00CD8C0B;
+			productRefGroup = 7B5F2CDF151BBF4C00CD8C0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B5F2CDD151BBF4C00CD8C0B /* Meditimerf2 */,
+				7B5F2D01151BBF4D00CD8C0B /* Meditimerf2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B5F2CDC151BBF4C00CD8C0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5F2CED151BBF4D00CD8C0B /* InfoPlist.strings in Resources */,
+				7B5F2CF6151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard in Resources */,
+				7B5F2CF9151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5F2CFF151BBF4D00CD8C0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5F2D0E151BBF4D00CD8C0B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B5F2D00151BBF4D00CD8C0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B5F2CDA151BBF4C00CD8C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5F2CEF151BBF4D00CD8C0B /* main.m in Sources */,
+				7B5F2CF3151BBF4D00CD8C0B /* MediAppDelegate.m in Sources */,
+				7B5F2CFC151BBF4D00CD8C0B /* MediViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5F2CFD151BBF4D00CD8C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5F2D11151BBF4D00CD8C0B /* Meditimerf2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B5F2D08151BBF4D00CD8C0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B5F2CDD151BBF4C00CD8C0B /* Meditimerf2 */;
+			targetProxy = 7B5F2D07151BBF4D00CD8C0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B5F2CEB151BBF4D00CD8C0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5F2CEC151BBF4D00CD8C0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7B5F2CF4151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5F2CF5151BBF4D00CD8C0B /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		7B5F2CF7151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5F2CF8151BBF4D00CD8C0B /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		7B5F2D0C151BBF4D00CD8C0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5F2D0D151BBF4D00CD8C0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B5F2D12151BBF4D00CD8C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B5F2D13151BBF4D00CD8C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B5F2D15151BBF4D00CD8C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Meditimerf2/Meditimerf2-Prefix.pch";
+				INFOPLIST_FILE = "Meditimerf2/Meditimerf2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7B5F2D16151BBF4D00CD8C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Meditimerf2/Meditimerf2-Prefix.pch";
+				INFOPLIST_FILE = "Meditimerf2/Meditimerf2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7B5F2D18151BBF4D00CD8C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Meditimerf2.app/Meditimerf2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Meditimerf2/Meditimerf2-Prefix.pch";
+				INFOPLIST_FILE = "Meditimerf2Tests/Meditimerf2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7B5F2D19151BBF4D00CD8C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Meditimerf2.app/Meditimerf2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Meditimerf2/Meditimerf2-Prefix.pch";
+				INFOPLIST_FILE = "Meditimerf2Tests/Meditimerf2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B5F2CD8151BBF4C00CD8C0B /* Build configuration list for PBXProject "Meditimerf2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5F2D12151BBF4D00CD8C0B /* Debug */,
+				7B5F2D13151BBF4D00CD8C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5F2D14151BBF4D00CD8C0B /* Build configuration list for PBXNativeTarget "Meditimerf2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5F2D15151BBF4D00CD8C0B /* Debug */,
+				7B5F2D16151BBF4D00CD8C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B5F2D17151BBF4D00CD8C0B /* Build configuration list for PBXNativeTarget "Meditimerf2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5F2D18151BBF4D00CD8C0B /* Debug */,
+				7B5F2D19151BBF4D00CD8C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B5F2CD5151BBF4C00CD8C0B /* Project object */;
+}
