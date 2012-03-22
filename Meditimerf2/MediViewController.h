@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MediViewController : UIViewController
+@interface MediViewController : UIViewController {
+    IBOutlet UILabel *label;
+    IBOutlet UIView *viewm;
+}
+
+- (IBAction)foo;
+- (void)printTimerValueAndScheduleNextCall;
+
+@property int32_t timerValue;
 
 @end

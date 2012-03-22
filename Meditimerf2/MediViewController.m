@@ -10,6 +10,28 @@
 
 @implementation MediViewController
 
+@synthesize timerValue;
+
+- (IBAction)foo
+{
+    printf("Gotcha");
+    self.timerValue = 10;
+    [self printTimerValueAndScheduleNextCall];
+//    label.text = @"Gotcha!!";
+}
+
+- (void)printTimerValueAndScheduleNextCall
+{
+//    label.text = @"Gotcha!!" . self.timerValue;
+    label.text = [NSString stringWithFormat: @"Hello %d", self.timerValue];
+    self.timerValue -= 1;
+    printf("AAA\n");
+    viewm.alpha = self.timerValue / 10.0;
+    if(self.timerValue > 0){
+        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(printTimerValueAndScheduleNextCall) userInfo:nil repeats:NO];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
