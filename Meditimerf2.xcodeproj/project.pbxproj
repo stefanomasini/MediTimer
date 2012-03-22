@@ -21,6 +21,7 @@
 		7B5F2D06151BBF4D00CD8C0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */; };
 		7B5F2D0E151BBF4D00CD8C0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F2D0C151BBF4D00CD8C0B /* InfoPlist.strings */; };
 		7B5F2D11151BBF4D00CD8C0B /* Meditimerf2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F2D10151BBF4D00CD8C0B /* Meditimerf2Tests.m */; };
+		7B5F2D1B151BC5CF00CD8C0B /* stefano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F2D1A151BC5CF00CD8C0B /* stefano.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +39,23 @@
 		7B5F2CE2151BBF4C00CD8C0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B5F2CE6151BBF4D00CD8C0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7B5F2CEA151BBF4D00CD8C0B /* Meditimerf2-Info.plist */ = {isa = PBXFileReference; path = "Meditimerf2-Info.plist"; sourceTree = "<group>"; };
+		7B5F2CEA151BBF4D00CD8C0B /* Meditimerf2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Meditimerf2-Info.plist"; sourceTree = "<group>"; };
 		7B5F2CEC151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B5F2CEE151BBF4D00CD8C0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7B5F2CF0151BBF4D00CD8C0B /* Meditimerf2-Prefix.pch */ = {isa = PBXFileReference; path = "Meditimerf2-Prefix.pch"; sourceTree = "<group>"; };
-		7B5F2CF1151BBF4D00CD8C0B /* MediAppDelegate.h */ = {isa = PBXFileReference; path = MediAppDelegate.h; sourceTree = "<group>"; };
+		7B5F2CF0151BBF4D00CD8C0B /* Meditimerf2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Meditimerf2-Prefix.pch"; sourceTree = "<group>"; };
+		7B5F2CF1151BBF4D00CD8C0B /* MediAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediAppDelegate.h; sourceTree = "<group>"; };
 		7B5F2CF2151BBF4D00CD8C0B /* MediAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediAppDelegate.m; sourceTree = "<group>"; };
 		7B5F2CF5151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		7B5F2CF8151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		7B5F2CFA151BBF4D00CD8C0B /* MediViewController.h */ = {isa = PBXFileReference; path = MediViewController.h; sourceTree = "<group>"; };
+		7B5F2CFA151BBF4D00CD8C0B /* MediViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediViewController.h; sourceTree = "<group>"; };
 		7B5F2CFB151BBF4D00CD8C0B /* MediViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediViewController.m; sourceTree = "<group>"; };
 		7B5F2D02151BBF4D00CD8C0B /* Meditimerf2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Meditimerf2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5F2D03151BBF4D00CD8C0B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7B5F2D0B151BBF4D00CD8C0B /* Meditimerf2Tests-Info.plist */ = {isa = PBXFileReference; path = "Meditimerf2Tests-Info.plist"; sourceTree = "<group>"; };
+		7B5F2D0B151BBF4D00CD8C0B /* Meditimerf2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Meditimerf2Tests-Info.plist"; sourceTree = "<group>"; };
 		7B5F2D0D151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7B5F2D0F151BBF4D00CD8C0B /* Meditimerf2Tests.h */ = {isa = PBXFileReference; path = Meditimerf2Tests.h; sourceTree = "<group>"; };
+		7B5F2D0F151BBF4D00CD8C0B /* Meditimerf2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meditimerf2Tests.h; sourceTree = "<group>"; };
 		7B5F2D10151BBF4D00CD8C0B /* Meditimerf2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meditimerf2Tests.m; sourceTree = "<group>"; };
+		7B5F2D1A151BC5CF00CD8C0B /* stefano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stefano.jpg; path = "../../../Dropbox/Foto Stefano/stefano.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		7B5F2CE9151BBF4D00CD8C0B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7B5F2D1A151BC5CF00CD8C0B /* stefano.jpg */,
 				7B5F2CEA151BBF4D00CD8C0B /* Meditimerf2-Info.plist */,
 				7B5F2CEB151BBF4D00CD8C0B /* InfoPlist.strings */,
 				7B5F2CEE151BBF4D00CD8C0B /* main.m */,
@@ -227,6 +230,7 @@
 				7B5F2CED151BBF4D00CD8C0B /* InfoPlist.strings in Resources */,
 				7B5F2CF6151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard in Resources */,
 				7B5F2CF9151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard in Resources */,
+				7B5F2D1B151BC5CF00CD8C0B /* stefano.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
