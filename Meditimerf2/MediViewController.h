@@ -11,6 +11,8 @@
 @interface MediViewController : UIViewController {
     IBOutlet UILabel *label;
     IBOutlet UIView *viewm;
+    IBOutlet UIView *viewconfig;
+    IBOutlet UIView *mainView;
 }
 
 - (IBAction)foo;

@@ -20,6 +20,27 @@
 //    label.text = @"Gotcha!!";
 }
 
+- (IBAction)rotateConfig
+{
+    printf("Config!");
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:.8];
+    
+    [UIView setAnimationTransition:([viewm superview] 
+                                    ? UIViewAnimationTransitionFlipFromRight
+                                    : UIViewAnimationTransitionFlipFromLeft) forView:mainView cache:YES];
+    
+    if([viewconfig superview]){
+        [viewconfig removeFromSuperview];
+        [mainView addSubview:viewm];
+    } else {
+        [viewm removeFromSuperview];
+        [mainView addSubview:viewconfig];
+    }
+    
+    [UIView commitAnimations];
+}
+
 - (void)printTimerValueAndScheduleNextCall
 {
 //    label.text = @"Gotcha!!" . self.timerValue;
@@ -44,6 +65,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [viewconfig removeFromSuperview];
 }
 
 - (void)viewDidUnload

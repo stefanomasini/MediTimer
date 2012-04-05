@@ -21,7 +21,7 @@
 		7B5F2D06151BBF4D00CD8C0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */; };
 		7B5F2D0E151BBF4D00CD8C0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F2D0C151BBF4D00CD8C0B /* InfoPlist.strings */; };
 		7B5F2D11151BBF4D00CD8C0B /* Meditimerf2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F2D10151BBF4D00CD8C0B /* Meditimerf2Tests.m */; };
-		7B5F2D1B151BC5CF00CD8C0B /* stefano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F2D1A151BC5CF00CD8C0B /* stefano.jpg */; };
+		9385F96B152E2EE8008F0EFD /* jeff ugly face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9385F96A152E2EE8008F0EFD /* jeff ugly face.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		7B5F2D0D151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B5F2D0F151BBF4D00CD8C0B /* Meditimerf2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meditimerf2Tests.h; sourceTree = "<group>"; };
 		7B5F2D10151BBF4D00CD8C0B /* Meditimerf2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meditimerf2Tests.m; sourceTree = "<group>"; };
-		7B5F2D1A151BC5CF00CD8C0B /* stefano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stefano.jpg; path = "../../../Dropbox/Foto Stefano/stefano.jpg"; sourceTree = "<group>"; };
+		9385F96A152E2EE8008F0EFD /* jeff ugly face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jeff ugly face.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 		7B5F2CE9151BBF4D00CD8C0B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B5F2D1A151BC5CF00CD8C0B /* stefano.jpg */,
+				9385F96A152E2EE8008F0EFD /* jeff ugly face.jpg */,
 				7B5F2CEA151BBF4D00CD8C0B /* Meditimerf2-Info.plist */,
 				7B5F2CEB151BBF4D00CD8C0B /* InfoPlist.strings */,
 				7B5F2CEE151BBF4D00CD8C0B /* main.m */,
@@ -230,7 +230,7 @@
 				7B5F2CED151BBF4D00CD8C0B /* InfoPlist.strings in Resources */,
 				7B5F2CF6151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard in Resources */,
 				7B5F2CF9151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard in Resources */,
-				7B5F2D1B151BC5CF00CD8C0B /* stefano.jpg in Resources */,
+				9385F96B152E2EE8008F0EFD /* jeff ugly face.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +447,7 @@
 				7B5F2D16151BBF4D00CD8C0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B5F2D17151BBF4D00CD8C0B /* Build configuration list for PBXNativeTarget "Meditimerf2Tests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +456,7 @@
 				7B5F2D19151BBF4D00CD8C0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
