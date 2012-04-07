@@ -21,6 +21,9 @@
 		7B5F2D06151BBF4D00CD8C0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */; };
 		7B5F2D0E151BBF4D00CD8C0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F2D0C151BBF4D00CD8C0B /* InfoPlist.strings */; };
 		7B5F2D11151BBF4D00CD8C0B /* Meditimerf2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F2D10151BBF4D00CD8C0B /* Meditimerf2Tests.m */; };
+		7BA6817A15305A2800AE2E5F /* 78-stopwatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA6817915305A2800AE2E5F /* 78-stopwatch.png */; };
+		7BA6817C15305AC100AE2E5F /* 187-pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA6817B15305AC100AE2E5F /* 187-pencil.png */; };
+		7BA6817F1530634C00AE2E5F /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA6817E1530634C00AE2E5F /* ConfigViewController.m */; };
 		9385F96B152E2EE8008F0EFD /* jeff ugly face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9385F96A152E2EE8008F0EFD /* jeff ugly face.jpg */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,10 @@
 		7B5F2D0D151BBF4D00CD8C0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B5F2D0F151BBF4D00CD8C0B /* Meditimerf2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meditimerf2Tests.h; sourceTree = "<group>"; };
 		7B5F2D10151BBF4D00CD8C0B /* Meditimerf2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meditimerf2Tests.m; sourceTree = "<group>"; };
+		7BA6817915305A2800AE2E5F /* 78-stopwatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "78-stopwatch.png"; sourceTree = "<group>"; };
+		7BA6817B15305AC100AE2E5F /* 187-pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "187-pencil.png"; sourceTree = "<group>"; };
+		7BA6817D1530634C00AE2E5F /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		7BA6817E1530634C00AE2E5F /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 		9385F96A152E2EE8008F0EFD /* jeff ugly face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jeff ugly face.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +125,8 @@
 				7B5F2CF1151BBF4D00CD8C0B /* MediAppDelegate.h */,
 				7B5F2CF2151BBF4D00CD8C0B /* MediAppDelegate.m */,
 				7B5F2CF4151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard */,
+				7BA6817D1530634C00AE2E5F /* ConfigViewController.h */,
+				7BA6817E1530634C00AE2E5F /* ConfigViewController.m */,
 				7B5F2CF7151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard */,
 				7B5F2CFA151BBF4D00CD8C0B /* MediViewController.h */,
 				7B5F2CFB151BBF4D00CD8C0B /* MediViewController.m */,
@@ -129,6 +138,8 @@
 		7B5F2CE9151BBF4D00CD8C0B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7BA6817B15305AC100AE2E5F /* 187-pencil.png */,
+				7BA6817915305A2800AE2E5F /* 78-stopwatch.png */,
 				9385F96A152E2EE8008F0EFD /* jeff ugly face.jpg */,
 				7B5F2CEA151BBF4D00CD8C0B /* Meditimerf2-Info.plist */,
 				7B5F2CEB151BBF4D00CD8C0B /* InfoPlist.strings */,
@@ -231,6 +242,8 @@
 				7B5F2CF6151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard in Resources */,
 				7B5F2CF9151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard in Resources */,
 				9385F96B152E2EE8008F0EFD /* jeff ugly face.jpg in Resources */,
+				7BA6817A15305A2800AE2E5F /* 78-stopwatch.png in Resources */,
+				7BA6817C15305AC100AE2E5F /* 187-pencil.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +281,7 @@
 				7B5F2CEF151BBF4D00CD8C0B /* main.m in Sources */,
 				7B5F2CF3151BBF4D00CD8C0B /* MediAppDelegate.m in Sources */,
 				7B5F2CFC151BBF4D00CD8C0B /* MediViewController.m in Sources */,
+				7BA6817F1530634C00AE2E5F /* ConfigViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

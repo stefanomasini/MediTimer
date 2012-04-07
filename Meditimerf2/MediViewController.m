@@ -30,12 +30,12 @@
                                     ? UIViewAnimationTransitionFlipFromRight
                                     : UIViewAnimationTransitionFlipFromLeft) forView:mainView cache:YES];
     
-    if([viewconfig superview]){
-        [viewconfig removeFromSuperview];
+    if([configView superview]){
+        [configView removeFromSuperview];
         [mainView addSubview:viewm];
     } else {
         [viewm removeFromSuperview];
-        [mainView addSubview:viewconfig];
+        [mainView addSubview:configView];
     }
     
     [UIView commitAnimations];
@@ -65,7 +65,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [viewconfig removeFromSuperview];
+//    [viewconfig removeFromSuperview];
 }
 
 - (void)viewDidUnload
