@@ -81,7 +81,7 @@
                                     <tabBarItem title="Configuration" image="187-pencil.png" id="uiN-Qs-n2M"/>
                                 </items>
                             </tabBar>
-                            <pickerView contentMode="scaleToFill" id="GCy-Bz-Lmv" customClass="MinutesPickerView">
+                            <pickerView contentMode="scaleToFill" id="GCy-Bz-Lmv">
                                 <rect key="frame" x="0.0" y="97" width="139" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
@@ -99,7 +99,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" id="STU-qa-Aie" customClass="MinutesPickerView">
+                            <pickerView contentMode="scaleToFill" id="STU-qa-Aie">
                                 <rect key="frame" x="139" y="97" width="181" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>

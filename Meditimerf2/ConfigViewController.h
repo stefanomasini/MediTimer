@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MinutesPickerController : NSObject <UIPickerViewDelegate, UIPickerViewDataSource> {
-    NSMutableArray *arrayNo;
+@interface DurationPickerController : NSObject <UIPickerViewDelegate, UIPickerViewDataSource> {
+    NSMutableArray *displayValues;
+    NSMutableArray *logicValues;
     void (^_callback)(int someParameter);
 }
 
@@ -20,8 +21,8 @@
     IBOutlet UIPickerView *preparationTimePickerView;
     IBOutlet UIPickerView *meditationTimePickerView;
     
-    MinutesPickerController *preparationTimePickerController;
-    MinutesPickerController *meditationTimePickerController;
+    DurationPickerController *preparationTimePickerController;
+    DurationPickerController *meditationTimePickerController;
 }
 
 @end

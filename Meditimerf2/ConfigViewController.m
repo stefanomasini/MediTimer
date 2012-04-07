@@ -10,18 +10,38 @@
 
 
 
-@implementation MinutesPickerController
+@implementation DurationPickerController
 
 
-- (id) initWithCallback:(void(^)(NSInteger))callback
+- (id) initForMinutes:(NSInteger)numMinutes withCallback:(void(^)(NSInteger))callback
 {
     _callback = [callback copy];
-    arrayNo = [[NSMutableArray alloc] init];
-    [arrayNo addObject:@" 100 "];
-    [arrayNo addObject:@" 200 "];
-    [arrayNo addObject:@" 400 "];
-    [arrayNo addObject:@" 600 "];
-    [arrayNo addObject:@" 1000 "];
+    displayValues = [[NSMutableArray alloc] init];
+    logicValues = [[NSMutableArray alloc] init];
+    
+    for (NSInteger m=1; m<=numMinutes; ++m) {
+        [displayValues addObject:[NSString stringWithFormat:@"%d min", m]];
+        [logicValues addObject:[NSNumber numberWithInteger:(m*60)]];
+    }
+    return self;
+}
+
+- (id) initForShortTimeWithCallback:(void(^)(NSInteger))callback
+{
+    _callback = [callback copy];
+    displayValues = [[NSMutableArray alloc] init];
+    logicValues = [[NSMutableArray alloc] init];
+    
+    [displayValues addObject:@"15 sec"];
+    [logicValues addObject:[NSNumber numberWithInteger:15]];
+    [displayValues addObject:@"30 sec"];
+    [logicValues addObject:[NSNumber numberWithInteger:30]];
+    [displayValues addObject:@"45 sec"];
+    [logicValues addObject:[NSNumber numberWithInteger:45]];
+    [displayValues addObject:@"1 min"];
+    [logicValues addObject:[NSNumber numberWithInteger:60]];
+    [displayValues addObject:@"2 min"];
+    [logicValues addObject:[NSNumber numberWithInteger:120]];
     return self;
 }
 
@@ -32,17 +52,17 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    _callback(row);
+    _callback([[logicValues objectAtIndex:row] integerValue]);
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
 {
-    return [arrayNo count];
+    return [displayValues count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 {
-    return [arrayNo objectAtIndex:row];
+    return [displayValues objectAtIndex:row];
 }
 
 
@@ -69,17 +89,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    preparationTimePickerController = [[MinutesPickerController alloc] initWithCallback:^(NSInteger result){
+    preparationTimePickerController = [[DurationPickerController alloc] initForShortTimeWithCallback:^(NSInteger result){
         // Prints 10
-        NSLog(@"Prep time: you selected idx %d \n", result);
+        NSLog(@"Prep time: you selected %d sec \n", result);
     }];
     preparationTimePickerView.dataSource = preparationTimePickerController;
     preparationTimePickerView.delegate = preparationTimePickerController;
     [preparationTimePickerView selectRow:1 inComponent:0 animated:NO];
     
-    meditationTimePickerController = [[MinutesPickerController alloc] initWithCallback:^(NSInteger result){
+    meditationTimePickerController = [[DurationPickerController alloc] initForMinutes:90 withCallback:^(NSInteger result){
         // Prints 10
-        NSLog(@"Med time: you selected idx %d \n", result);
+        NSLog(@"Med time: you selected %d sec \n", result);
     }];
     meditationTimePickerView.dataSource = meditationTimePickerController;
     meditationTimePickerView.delegate = meditationTimePickerController;
