@@ -27,7 +27,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Config" id="LQ4-nh-DDj">
                                             <connections>
                                                 <action selector="rotateConfig" destination="2" id="AGH-Eq-lEM"/>
-                                                <segue destination="Xdk-1e-f7p" kind="custom" id="0Co-iM-LML"/>
+                                                <segue destination="Xdk-1e-f7p" kind="modal" modalTransitionStyle="flipHorizontal" id="0Co-iM-LML"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Get me, idiot!" id="Utb-hT-oLa">
