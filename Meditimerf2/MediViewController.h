@@ -7,17 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CircularProgressView.h"
 
 @interface MediViewController : UIViewController {
-    IBOutlet UILabel *label;
-    IBOutlet UIView *viewm;
-    IBOutlet UIView *configView;
-    IBOutlet UIView *mainView;
+    IBOutlet CircularProgressView* circularProgressView;
+    
+@private
+    NSInteger _numUpdates;
+    NSTimeInterval _preparationTimeInSec;
+    NSTimeInterval _meditationTimeInSec;
+    NSTimer *updateTimer;
+    NSDate *startTS;
 }
 
-- (IBAction)foo;
-- (void)printTimerValueAndScheduleNextCall;
-
-@property int32_t timerValue;
+- (void)handleTap:(UITapGestureRecognizer*)recognizer;
 
 @end

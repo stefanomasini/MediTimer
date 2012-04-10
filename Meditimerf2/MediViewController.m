@@ -10,47 +10,65 @@
 
 @implementation MediViewController
 
-@synthesize timerValue;
-
-- (IBAction)foo
+- (void)handleTap:(UITapGestureRecognizer*)recognizer
 {
-    printf("Gotcha");
-    self.timerValue = 10;
-    [self printTimerValueAndScheduleNextCall];
-//    label.text = @"Gotcha!!";
+    // Do Your thing. 
+//    if (recognizer.state == UIGestureRecognizerStateEnded)
+//    {
+//        [self startTimer];
+//    }
+}
+
+- (IBAction)startTimer
+{
+    NSLog(@"Gotcha! %@\n", circularProgressView);
+    _preparationTimeInSec = 1;
+    _meditationTimeInSec = 20;
+    _numUpdates = 360/0.1; // Update every third of degree
+    NSTimeInterval updateInterval = _meditationTimeInSec / _numUpdates;
+    startTS = [NSDate date];
+    
+    updateTimer = [NSTimer 
+                   scheduledTimerWithTimeInterval:updateInterval
+                   target:self selector:@selector(_updateCircularTimer) 
+                   userInfo:nil 
+                   repeats:YES];
+}
+
+- (void)_updateCircularTimer
+{
+    NSTimeInterval elapsed = [[NSDate date] timeIntervalSinceDate:startTS];
+    double progress = elapsed / _meditationTimeInSec;
+    if (elapsed < _preparationTimeInSec) {
+        [circularProgressView setColourR:250 G:210 B:10];
+    } else {
+        [circularProgressView setColourR:80 G:180 B:20];
+    }
+    circularProgressView.progress = (progress<1.0 ? progress : 1.0);
+    if (progress > 1) {
+        [updateTimer invalidate];
+    }
 }
 
 - (IBAction)rotateConfig
 {
-    printf("Config!");
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:.8];
-    
-    [UIView setAnimationTransition:([viewm superview] 
-                                    ? UIViewAnimationTransitionFlipFromRight
-                                    : UIViewAnimationTransitionFlipFromLeft) forView:mainView cache:YES];
-    
-    if([configView superview]){
-        [configView removeFromSuperview];
-        [mainView addSubview:viewm];
-    } else {
-        [viewm removeFromSuperview];
-        [mainView addSubview:configView];
-    }
-    
-    [UIView commitAnimations];
-}
-
-- (void)printTimerValueAndScheduleNextCall
-{
-//    label.text = @"Gotcha!!" . self.timerValue;
-    label.text = [NSString stringWithFormat: @"Hello %d", self.timerValue];
-    self.timerValue -= 1;
-    printf("AAA\n");
-    viewm.alpha = self.timerValue / 10.0;
-    if(self.timerValue > 0){
-        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(printTimerValueAndScheduleNextCall) userInfo:nil repeats:NO];
-    }
+    NSLog(@"Config!\n");
+//    [UIView beginAnimations:nil context:NULL];
+//    [UIView setAnimationDuration:.8];
+//    
+//    [UIView setAnimationTransition:([viewm superview] 
+//                                    ? UIViewAnimationTransitionFlipFromRight
+//                                    : UIViewAnimationTransitionFlipFromLeft) forView:mainView cache:YES];
+//    
+//    if([configView superview]){
+//        [configView removeFromSuperview];
+//        [mainView addSubview:viewm];
+//    } else {
+//        [viewm removeFromSuperview];
+//        [mainView addSubview:configView];
+//    }
+//    
+//    [UIView commitAnimations];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,7 +83,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-//    [viewconfig removeFromSuperview];
+}
+
+- (IBAction)infoButtonPressed
+{
+    NSLog(@"Info button pressed\n");
 }
 
 - (void)viewDidUnload

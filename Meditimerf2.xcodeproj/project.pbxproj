@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B246A7715332C8D008D935A /* CircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B246A7415332C8D008D935A /* CircularProgressView.m */; };
 		7B5F2CE3151BBF4D00CD8C0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE2151BBF4C00CD8C0B /* UIKit.framework */; };
 		7B5F2CE5151BBF4D00CD8C0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */; };
 		7B5F2CE7151BBF4D00CD8C0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F2CE6151BBF4D00CD8C0B /* CoreGraphics.framework */; };
@@ -24,7 +25,6 @@
 		7BA6817A15305A2800AE2E5F /* 78-stopwatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA6817915305A2800AE2E5F /* 78-stopwatch.png */; };
 		7BA6817C15305AC100AE2E5F /* 187-pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA6817B15305AC100AE2E5F /* 187-pencil.png */; };
 		7BA6817F1530634C00AE2E5F /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA6817E1530634C00AE2E5F /* ConfigViewController.m */; };
-		9385F96B152E2EE8008F0EFD /* jeff ugly face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9385F96A152E2EE8008F0EFD /* jeff ugly face.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B246A6F153328BA008D935A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7B246A70153328BA008D935A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7B246A7315332C8D008D935A /* CircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularProgressView.h; sourceTree = "<group>"; };
+		7B246A7415332C8D008D935A /* CircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularProgressView.m; sourceTree = "<group>"; };
 		7B5F2CDE151BBF4C00CD8C0B /* Meditimerf2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditimerf2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5F2CE2151BBF4C00CD8C0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,7 +66,6 @@
 		7BA6817B15305AC100AE2E5F /* 187-pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "187-pencil.png"; sourceTree = "<group>"; };
 		7BA6817D1530634C00AE2E5F /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		7BA6817E1530634C00AE2E5F /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
-		9385F96A152E2EE8008F0EFD /* jeff ugly face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jeff ugly face.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		7B5F2CE1151BBF4C00CD8C0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B246A6F153328BA008D935A /* GLKit.framework */,
+				7B246A70153328BA008D935A /* OpenGLES.framework */,
 				7B5F2CE2151BBF4C00CD8C0B /* UIKit.framework */,
 				7B5F2CE4151BBF4D00CD8C0B /* Foundation.framework */,
 				7B5F2CE6151BBF4D00CD8C0B /* CoreGraphics.framework */,
@@ -122,6 +127,8 @@
 		7B5F2CE8151BBF4D00CD8C0B /* Meditimerf2 */ = {
 			isa = PBXGroup;
 			children = (
+				7B246A7315332C8D008D935A /* CircularProgressView.h */,
+				7B246A7415332C8D008D935A /* CircularProgressView.m */,
 				7B5F2CF1151BBF4D00CD8C0B /* MediAppDelegate.h */,
 				7B5F2CF2151BBF4D00CD8C0B /* MediAppDelegate.m */,
 				7B5F2CF4151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard */,
@@ -140,7 +147,6 @@
 			children = (
 				7BA6817B15305AC100AE2E5F /* 187-pencil.png */,
 				7BA6817915305A2800AE2E5F /* 78-stopwatch.png */,
-				9385F96A152E2EE8008F0EFD /* jeff ugly face.jpg */,
 				7B5F2CEA151BBF4D00CD8C0B /* Meditimerf2-Info.plist */,
 				7B5F2CEB151BBF4D00CD8C0B /* InfoPlist.strings */,
 				7B5F2CEE151BBF4D00CD8C0B /* main.m */,
@@ -241,7 +247,6 @@
 				7B5F2CED151BBF4D00CD8C0B /* InfoPlist.strings in Resources */,
 				7B5F2CF6151BBF4D00CD8C0B /* MainStoryboard_iPhone.storyboard in Resources */,
 				7B5F2CF9151BBF4D00CD8C0B /* MainStoryboard_iPad.storyboard in Resources */,
-				9385F96B152E2EE8008F0EFD /* jeff ugly face.jpg in Resources */,
 				7BA6817A15305A2800AE2E5F /* 78-stopwatch.png in Resources */,
 				7BA6817C15305AC100AE2E5F /* 187-pencil.png in Resources */,
 			);
@@ -282,6 +287,7 @@
 				7B5F2CF3151BBF4D00CD8C0B /* MediAppDelegate.m in Sources */,
 				7B5F2CFC151BBF4D00CD8C0B /* MediViewController.m in Sources */,
 				7BA6817F1530634C00AE2E5F /* ConfigViewController.m in Sources */,
+				7B246A7715332C8D008D935A /* CircularProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
